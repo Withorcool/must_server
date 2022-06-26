@@ -27,17 +27,6 @@ print("""
 |/__\|/__\|/__\|/__\|/__\|/_______\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/_______\|/__\|/__\|/__\|/__\|/__\|
 """)
 def generate_id(player_list: dict, max_players: int):
-    """
-    Generate a unique identifier
-
-    Args:
-        player_list (dict): dictionary of existing players
-        max_players (int): maximum number of players allowed
-
-    Returns:
-        str: the unique identifier
-    """
-
     while True:
         unique_id = str(random.randint(1, max_players))
         if unique_id not in player_list:
